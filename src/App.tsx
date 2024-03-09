@@ -1,11 +1,14 @@
+import { ModeToggle } from './components/mode-toggle'
+import { ThemeProvider } from './components/theme-provider'
 import { Button } from './components/ui/button'
 
 const App = () => {
   return (
-    <main className="flex items-center justify-center w-screen h-screen bg-blue-500">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ModeToggle />
       <>HENLOHENLO </>
       <Button>{'KKKK'}</Button>
-    </main>
+    </ThemeProvider>
   )
 }
 
