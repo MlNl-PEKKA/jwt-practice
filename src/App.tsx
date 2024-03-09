@@ -1,9 +1,10 @@
-import Register from './register'
+import { Button } from './components/ui/button'
 
 const App = () => {
   return (
     <main className="flex items-center justify-center w-screen h-screen bg-blue-500">
-      <Register />
+      <>HENLOHENLO </>
+      <Button>{'KKKK'}</Button>
     </main>
   )
 }
